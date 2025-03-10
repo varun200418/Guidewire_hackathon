@@ -1,0 +1,35 @@
+Step 1: Identify Key Metrics and Data Sources
+
+In Kubernetes, data can be collected from multiple sources. The most useful metrics for predicting issues include:
+
+✅ Node Metrics:
+
+    CPU Usage, Memory Usage
+    Disk I/O, Network Traffic
+    Node Status (e.g., Ready, NotReady)
+
+✅ Pod Metrics:
+
+    Pod Status (e.g., Running, CrashLoopBackOff)
+    Container Restarts
+    Resource Limits and Requests
+
+✅ Cluster Events:
+
+    Failed Deployments
+    Node Failures
+    Scheduling Issues
+
+✅ Logs:
+
+    Error logs from pods or services
+    Kubernetes system logs (e.g., kubelet, kube-apiserver)
+
+Step 2: Tools for Data Collection
+
+You can use the following tools to gather these metrics:
+
+🔹 Prometheus – For real-time metrics collection and monitoring
+🔹 Grafana – For visualizing the collected data
+🔹 Elasticsearch – For storing and querying logs efficiently
+🔹 Kubectl Commands – For gathering cluster state data directly
